@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Engineering: Phishing Attacks</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --card: #f6f8fa;
+      --text: #24292f;
+      --accent: #0969da;
+      --muted: #57606a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, system-ui, sans-serif;
+      background: radial-gradient(circle at top, rgba(9, 105, 218, 0.08), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #f6f8fa 100%);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 32px;
+    }
+
+    .page {
+      width: min(960px, 100%);
+      background: rgba(255, 255, 255, 0.98);
+      border: 1px solid rgba(208, 215, 222, 0.5);
+      border-radius: 24px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 40px 40px 28px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 4vw, 4rem);
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 24px 24px 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(88, 166, 255, 0.12);
+      padding: 12px 18px;
+      border-radius: 999px;
+      transition: background 0.2s ease, transform 0.2s ease;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      background: rgba(88, 166, 255, 0.22);
+      transform: translateY(-1px);
+    }
+
+    .content {
+      padding: 32px 40px 40px;
+      line-height: 1.75;
+      color: var(--muted);
+      display: grid;
+      gap: 24px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 24px;
+    }
+
+    .card h2 {
+      margin-bottom: 14px;
+      color: var(--text);
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      margin-bottom: 12px;
+    }
+
+    .note {
+      color: #c9d1d9;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Social Engineering: Phishing Attacks</h1>
+      <p class="subtitle">by Von H and Kaden W</p>
+    </header>
+    <nav>
+      <a href="fakesite01.html">Fake Site Example</a>
+      <a href="#why">Why Phishing Works</a>
+      <a href="#signs">Common Signs</a>
+      <a href="#tips">Stay Safe</a>
+    </nav>
+    <main class="content">
+      <section class="card" id="why">
+        <h2>Why Phishing Works</h2>
+        <p>Phishing attacks use trust, urgency, and familiar branding to trick people into revealing passwords, personal data, or financial details.</p>
+      </section>
+      <section class="card" id="signs">
+        <h2>Examples of Phishing</h2>
+        <p>Common phishing examples include fake login pages, spoofed URLs, fraudulent emails, and urgent security alerts that encourage hasty action.</p>
+      </section>
+      <section class="card" id="tips">
+        <h2>Tips to Spot a Fake Page</h2>
+        <p>Check the URL carefully, verify sender details, avoid clicking suspicious links, and never enter credentials on an untrusted site.</p>
+        <p class="note">Explore the fake site example to see how a spoofed page can appear real at first glance.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
