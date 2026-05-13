@@ -867,14 +867,38 @@ Google Code style (c) Aahan Krish <geekpanth3r@gmail.com>
     background: rgb(255, 255, 255);
     overscroll-behavior: auto;
 }
-
-
-
+.ic-app-nav-toggle-and-crumbs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e8eaec;
+    margin: 0 24px;
+    min-height: 4.5rem;
+    box-sizing: border-box;
+}
+.ic-app-crumbs-enhanced-rubrics {
+    flex: 1;
+    display: block;
+    align-items: center;
+    box-sizing: border-box;
+}
+#breadcrumbs>ul, #breadcrumbs>ol {
+    margin: 0;
+    padding: 4px 15px;
+    list-style: none;
+    padding: 0;
+}
+ul, ol {
+    padding: 0;
+    margin: 0 0 6px 25px;
+}
+#breadcrumbs>ul>li:first-of-type, #breadcrumbs>ol>li:first-of-type {
+    visibility: hidden;
+}
 </style>
 <style>
     .hero {
   display: block;
-  width: 100%;
+  width: auto;
   height: 113px;
   background-image: url(images/Screenshot\ 2026-05-12\ 153218.png);
   background-size: cover;
